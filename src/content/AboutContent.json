@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Fast, Easy to use & Secure",
+  "text": "Our user-friendly scraper is designed with simplicity in mind, ensuring a seamless experience for users of all levels. No logins, no sign-ups—just download and start extracting.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Why use our tool?",
+      "content": "Our tool enables seamless data extraction – no logins, no signups, no data collection; everything runs locally. Export to CSV or JSON when it's done and unlock insights effortlessly and securely.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why gather e-commerce data?",
+      "content": "Gathering e-commerce data empowers your business by providing invaluable insights into market trends, competitor strategies, and pricing dynamics. Stay ahead of the competition, optimize your offerings, and make informed decisions with a wealth of data at your fingertips.",
       "icon": "notes.svg"
     }
   ]
