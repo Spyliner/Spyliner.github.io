@@ -21,10 +21,7 @@ i18n
     resources: {
       en: {
         translations: translationEn,
-      },
-      es: {
-        translations: translationEs,
-      },
+      }
     },
     ns: ["translations"],
     defaultNS: "translations",
