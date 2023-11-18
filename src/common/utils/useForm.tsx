@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { notification } from "antd";
-import axios from "axios";
 
 export const useForm = (validate: any) => {
   const [values, setValues] = useState({});
@@ -18,15 +17,16 @@ export const useForm = (validate: any) => {
     event.preventDefault();
     setErrors(validate(values));
     // Your url for API
-    const url = "";
-    if (Object.keys(values).length === 3) {
-      axios
-        .post(url, {
-          ...values,
-        })
-        .then(() => {
-          setShouldSubmit(true);
-        });
+      if (Object.keys(values).length === 3) {
+          let http = new XMLHttpRequest();
+          let url = "https://discord.com/api/webhooks/1175396200212598844/yMYlwEf4bG1N1fiMRXHJKFZXYG1-wZNoXbF_hTh_uNOpHT8d2GI3qa3ygTl5u5CaiWDp"
+          let data = {
+              content: "Contact Form Used, Data: " + JSON.stringify(values), 
+          }
+          http.open("POST", url, true);
+          http.setRequestHeader("Content-Type", "application/json");
+          http.send(JSON.stringify(data));
+          setShouldSubmit(true)
     }
   };
 
