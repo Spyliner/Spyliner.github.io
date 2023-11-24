@@ -1,12 +1,14 @@
 ﻿import styled from "styled-components";
 
+
+
 export const PricingDiv = styled('div')`
   background: #FFFFF;;
   width: 280px;
   top: 50%;
   left: 50%;
-  margin: -117px 0 0 -140px;
-  padding: 40px 0 20px;
+
+  padding: 40px 10px 20px;
   color: #18216d;
   box-shadow: 0 0 5px rgb(24, 33, 109);
   border-radius:5px; 
