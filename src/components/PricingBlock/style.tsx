@@ -1,15 +1,16 @@
-import styled from "styled-components";
+﻿import styled from "styled-components";
 
 export const PricingDiv = styled('div')`
-  position: absolute;
-  background: #3498db;;
+  background: #FFFFF;;
   width: 280px;
   top: 50%;
   left: 50%;
   margin: -117px 0 0 -140px;
   padding: 40px 0 20px;
-  color: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  color: #18216d;
+  box-shadow: 0 0 5px rgb(24, 33, 109);
+  border-radius:5px; 
+  
 `
 
 export const ThumbnailBlock = styled('div')`
@@ -64,15 +65,51 @@ export const ListItem = styled('li')`
 
 
 
-export const CheckMark = styled('div')`
-
-
+export const Checkmark = styled('div')`
+ position:relative;
+  display:inline-block;
+  &:after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid #090;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  margin-right: 10px;
+  text-align: center;
 `
 
 
 
-export const UnCheckMark = styled('div')`
+export const Crossmark = styled('div')`
+   position:relative;
+  display:inline-block;
+  &:after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid red;
+    border-width: 0 3px 0px 0;
+    transform: rotate(45deg);
+  } 
+  &:before{
+    position:absolute;
+    top:3px; 
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid red;
+    border-width: 0 3px 0px 0;
+    transform: rotate(-45deg);
+  }
 
+
+  margin-right: 10px;
+  text-align: center;
 
 `
 
@@ -83,20 +120,21 @@ export const UnCheckMark = styled('div')`
 
 export const SubscribeButton = styled('a')`
    display: block;
-  background: red;
-  max-width: 80px;
+  background: rgb(24, 33, 109);
+  max-width: 120px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 10px 15px;
-  color: #fff;
+  color: white;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
   transition: 0.2s linear;
-  a:hover {
-  background: rgba(52, 73, 94, 0.7);
+    border-radius:5px; 
+  :hover {
+      color: rgb(255, 255, 255);
+    background-color: rgb(255, 130, 92);
 }
 
-  
   `

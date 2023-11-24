@@ -45,14 +45,16 @@ const Home = () => {
         icon="product-launch.svg"
         id="mission"
           />
-          <PricingBlock></PricingBlock>
-      <ContentBlock
-        type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
-        icon="waving.svg"
-        id="product"
-      />
+      <PricingBlock
+      >
+      </PricingBlock>
+      {/*<ContentBlock*/}
+      {/*  type="left"*/}
+      {/*  title={ProductContent.title}*/}
+      {/*  content={ProductContent.text}*/}
+      {/*  icon="waving.svg"*/}
+      {/*  id="product"*/}
+      {/*/>*/}
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}

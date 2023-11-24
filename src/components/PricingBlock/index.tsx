@@ -1,31 +1,45 @@
 import { withTranslation } from "react-i18next";
-import { Container } from "../../common/Input/styles";
-import { PricingDiv, SubTitle, SubscribeButton, ThumbnailBlock, TitleBlock, ContentBlock, ListItem } from "./style";
+import { PricingDiv, SubTitle, SubscribeButton, ThumbnailBlock, TitleBlock, ContentBlock, ListItem, Checkmark, Crossmark } from "./style";
+import { Slide } from "react-awesome-reveal";
+import { Row , Col} from "antd";
+import { ContentWrapper } from "../ContentBlock/RightContentBlock/styles";
+import { Content, MiddleBlockSection } from "../MiddleBlock/styles";
 
 
 
 
 const PricingBlock = () => {
     return (
-        <Container>
-            <PricingDiv>
-                <ThumbnailBlock>
-                
-                </ThumbnailBlock>
-                <TitleBlock>
-                    
-                </TitleBlock>
-                <div>
-                    <SubTitle>
-                    </SubTitle>
-                    <ContentBlock>
-                        <ListItem> </ListItem>
-                    </ContentBlock>
-                </div>
+        <MiddleBlockSection>
+            <Slide direction="up">
+                <Row justify="center" align="middle">
+                    <ContentWrapper>
+                        <Col lg={24} md={24} sm={24} xs={24}>
+                            <Content>
+                                <PricingDiv>
+                                    <ThumbnailBlock>
+                                    </ThumbnailBlock>
+                                    <TitleBlock>
+                                        Pro
+                                    </TitleBlock>
+                                    <div>
+                                        <SubTitle>
+                                            65$/Month</SubTitle>
+                                        <ContentBlock>
 
-                <SubscribeButton>Buy now!</SubscribeButton>
-            </PricingDiv>
-        </Container>
+                                            <ListItem> <Checkmark> </Checkmark> testsetesttest</ListItem>
+                                            <ListItem> <Crossmark> </Crossmark> testsetesttest</ListItem>
+                                        </ContentBlock>
+                                    </div>
+
+                                    <SubscribeButton>Subscribe</SubscribeButton>
+                                </PricingDiv>
+                            </Content>
+                        </Col>
+                    </ContentWrapper>
+                </Row>
+            </Slide>
+        </MiddleBlockSection>
     )
 }
 
