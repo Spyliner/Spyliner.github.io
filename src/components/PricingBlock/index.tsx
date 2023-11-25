@@ -12,7 +12,7 @@ interface PricingProps {
 function createPricingElements(data: any) { 
     let elements = []
     for (let i = 0; i <= data.length-1; i++) {
-        elements.push(createPricingElement(data[0]))
+        elements.push(createPricingElement(data[i]))
     }
     return elements
 }
@@ -34,7 +34,7 @@ function createPricingElement(data:any) {
                     {generateCrossmark(data.crossList)}
                 </ContentBlock>
             </div>
-            <SubscribeButton>Subscribe</SubscribeButton>
+            <SubscribeButton>Select</SubscribeButton>
         </PricingDiv>
     )
 }
@@ -43,7 +43,7 @@ function createPricingElement(data:any) {
 function generateCheckmark(data:Array<string>) { 
     let checkmarks: any = []
     for (let i = 0; i <= data.length - 1; i++) { 
-        checkmarks.push(<ListItem> <Checkmark> </Checkmark> { data[0]}</ListItem>)
+        checkmarks.push(<ListItem> <Checkmark> </Checkmark> { data[i]}</ListItem>)
     }
     return checkmarks
 }
@@ -51,7 +51,7 @@ function generateCheckmark(data:Array<string>) {
 function generateCrossmark(data: Array<string>) { 
     let crossmarks: any = []
     for (let i = 0; i <= data.length - 1; i++) {
-        crossmarks.push(<ListItem> <Crossmark> </Crossmark> {data[0]}</ListItem>)
+        crossmarks.push(<ListItem> <Crossmark> </Crossmark> {data[i]}</ListItem>)
     }
     return crossmarks
 }

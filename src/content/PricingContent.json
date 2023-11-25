@@ -2,11 +2,34 @@
   "title": "Pricing",
   "data": [
     {
-      "pricingTitle": "Pro",
+      "pricingTitle": "Free",
       "logo": "",
-      "price": "$60/month",
-      "checkedList": [ "yes", "yes", "yes", "yes" ],
-      "crossList": [ "no", "no", "no" ]
+      "price": "$0/Month",
+      "checkedList": [ "Scrape up to 30 row", "Scrape basic information", "Email support"],
+      "crossList": [ "Product variant scraping", "Option to export as JSON/XLSX" ]
+    },
+    {
+      "pricingTitle": "Premium",
+      "logo": "",
+      "price": "$10/month",
+      "checkedList": [ "Unlimited row scraping", "Scrape basic information", "Email support", "All Feature for Future Product ", "Product variant scraping", "Option to export as JSON/XLSX" ],
+      "crossList": [ ]
+    },
+    {
+      "pricingTitle": "Early Adopter",
+      "logo": "",
+      "price": "$100 Lifetime (Only available until 31 December 2023)",
+      "checkedList": [
+        "Unlimited row scraping",
+        "Scrape basic information",
+        "Email support",
+        "All features for future products",
+        "Product variant scraping",
+        "Option to export as JSON/XLSX",
+        "Lifetime access to premium feature",
+        "All premium features for upcoming scrapers"
+      ],
+      "crossList": []
     }
   ]
 }
