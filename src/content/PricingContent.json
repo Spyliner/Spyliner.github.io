@@ -1,0 +1,12 @@
+{
+  "title": "Pricing",
+  "data": [
+    {
+      "pricingTitle": "Pro",
+      "logo": "",
+      "price": "$60/month",
+      "checkedList": [ "yes", "yes", "yes", "yes" ],
+      "crossList": [ "no", "no", "no" ]
+    }
+  ]
+}
