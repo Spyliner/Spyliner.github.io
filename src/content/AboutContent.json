@@ -4,12 +4,12 @@
   "section": [
     {
       "title": "Why use our tool?",
-      "content": "Our tool enables seamless data extraction – no logins, no signups, no data collection; everything runs locally. Export to CSV or JSON when it's done and unlock insights effortlessly and securely.",
+      "content": "Our tool ensures seamless data extraction, requiring no logins, signups, or data collection. Operate locally, export to CSV or JSON, and unlock insights effortlessly and securely.",
       "icon": "notes.svg"
     },
     {
       "title": "Why gather e-commerce data?",
-      "content": "Gathering e-commerce data empowers your business by providing invaluable insights into market trends, competitor strategies, and pricing dynamics. Stay ahead of the competition, optimize your offerings, and make informed decisions with a wealth of data at your fingertips.",
+      "content": "Empower your business with e-commerce data: glean insights into market trends, competitor strategies, and pricing dynamics. Stay ahead, optimize offerings, and make informed decisions with a wealth of data at your fingertips.",
       "icon": "notes.svg"
     }
   ]
