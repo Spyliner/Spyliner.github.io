@@ -19,9 +19,9 @@ function createPricingElements(data: any) {
 
 function createPricingElement(data:any) { 
     return (
-        <PricingDiv>
+        <PricingDiv> 
             <ThumbnailBlock>
-                {data.logo}
+                <img src={data.logo}></img>
             </ThumbnailBlock>
             <TitleBlock>
                 {data.pricingTitle}

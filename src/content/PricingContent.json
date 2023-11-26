@@ -3,27 +3,27 @@
   "data": [
     {
       "pricingTitle": "Free",
-      "logo": "",
+      "logo": "/img/svg/free-tier.svg",
       "price": "$0/Month",
-      "checkedList": [ "Scrape up to 30 row", "Scrape basic information", "Email support"],
+      "checkedList": [ "Scrape up to 30 row", "Scrape basic information", "Email support" ],
       "crossList": [ "Product variant scraping", "Option to export as JSON/XLSX" ]
     },
     {
       "pricingTitle": "Premium",
-      "logo": "",
+      "logo": "/img/svg/premium-tier.svg",
       "price": "$10/month",
-      "checkedList": [ "Unlimited row scraping", "Scrape basic information", "Email support", "All Feature for Future Product ", "Product variant scraping", "Option to export as JSON/XLSX" ],
-      "crossList": [ ]
+      "checkedList": [ "Unlimited row scraping", "Scrape basic information", "Email support", "All future premium feature ", "Product variant scraping", "Option to export as JSON/XLSX" ],
+      "crossList": []
     },
     {
       "pricingTitle": "Early Adopter",
-      "logo": "",
+      "logo": "/img/svg/early-adopter-tier.svg",
       "price": "$100 Lifetime (Only available until 31 December 2023)",
       "checkedList": [
         "Unlimited row scraping",
         "Scrape basic information",
         "Email support",
-        "All features for future products",
+        "All future premium feature",
         "Product variant scraping",
         "Option to export as JSON/XLSX",
         "Lifetime access to premium feature"

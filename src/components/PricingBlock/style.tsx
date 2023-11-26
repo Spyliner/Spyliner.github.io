@@ -16,10 +16,6 @@ export const PricingDiv = styled('div')`
 `
 
 export const ThumbnailBlock = styled('div')`
-  cursor: pointer;
-  background: var(--accent_hover);
-  margin: 40px 0 0;
-  padding: 10px;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
