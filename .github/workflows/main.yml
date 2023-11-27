@@ -16,5 +16,6 @@ jobs:
         with: 
           folder: build
           branch: build
-      
+    permissions:
+      contents: write
       
