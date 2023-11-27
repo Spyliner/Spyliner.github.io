@@ -3,6 +3,7 @@ import { PricingDiv, SubTitle, SubscribeButton, ThumbnailBlock, TitleBlock, Cont
 import { Slide } from "react-awesome-reveal";
 import { Row , Col} from "antd";
 import {  MiddleBlockSection } from "../MiddleBlock/styles";
+import Paypal from "../PaymentComponent/Paypal";
 
 interface PricingProps { 
     title: string; 
@@ -17,7 +18,7 @@ function createPricingElements(data: any) {
     return elements
 }
 
-function createPricingElement(data:any) { 
+function createPricingElement(data: any) { 
     return (
         <PricingDiv> 
             <ThumbnailBlock>
@@ -34,6 +35,7 @@ function createPricingElement(data:any) {
                     {generateCrossmark(data.crossList)}
                 </ContentBlock>
             </div>
+            <Paypal buttonId={data.pricingTitle.replace(" ", "-").toLowerCase()}></Paypal>
             <SubscribeButton>Select</SubscribeButton>
         </PricingDiv>
     )
