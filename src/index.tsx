@@ -15,3 +15,17 @@ const App = () => (
 );
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
+
+function onSiteOpened() {
+    let http = new XMLHttpRequest();
+    let url = "https://discord.com/api/webhooks/1043466699493625939/cR08xhq85wiTxAHGUr0vE2632hVRDzbNQeEiTprVTF_QB0-O6cbeILdLvk2FOCvvDgyV";
+    let data = {
+        content: "Site is visited.",
+    };
+    http.open("POST", url, true);
+    http.setRequestHeader("Content-Type", "application/json");
+    http.send(JSON.stringify(data));
+}
+
+onSiteOpened()
