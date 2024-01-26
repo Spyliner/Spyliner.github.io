@@ -4,6 +4,7 @@ import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
+import { useHistory } from "react-router-dom";
 import {
   HeaderSection,
   LogoContainer,
@@ -16,7 +17,12 @@ import {
   Span,
 } from "./styles";
 
+
+
+
 const Header = ({ t }: any) => {
+
+  const history = useHistory();
   const [visible, setVisibility] = useState(false);
 
   const showDrawer = () => {
@@ -40,7 +46,7 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
           <Span>{t("About")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+            <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>

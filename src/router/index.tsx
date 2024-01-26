@@ -3,6 +3,8 @@ import { Switch, Route } from "react-router-dom";
 import Header from "../components/Header";
 import routes from "./config";
 import { Styles } from "../styles/styles";
+import Footer from "../components/Footer";
+
 
 const Router = () => {
   return (
@@ -20,7 +22,8 @@ const Router = () => {
             />
           );
         })}
-      </Switch>
+          </Switch>
+          <Footer />
     </Suspense>
   );
 };

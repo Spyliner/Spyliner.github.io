@@ -35,12 +35,15 @@ function createPricingElement(data: any) {
                     {generateCrossmark(data.crossList)}
                 </ContentBlock>
             </div>
-            <Paypal buttonId={data.pricingTitle.replace(" ", "-").toLowerCase()}></Paypal>
-            <SubscribeButton>Select</SubscribeButton>
+            {generateSelectButton(data.price)}
         </PricingDiv>
     )
 }
 
+function generateSelectButton(price: any) { 
+    if (price === "$0/Month") return 
+    return <SubscribeButton>Select</SubscribeButton>
+}
 
 function generateCheckmark(data:Array<string>) { 
     let checkmarks: any = []
