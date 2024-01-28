@@ -42,8 +42,6 @@ loadScript({ "clientId": "AXWz8a-_YDad9XYNqA7TdcpL7DidT1BiWBKKuZKHSHLej3NLFzqPai
             }
             paypal.Buttons().render("#"+id)
         }
-
-
     }
 )
 

@@ -45,10 +45,10 @@ const Home = () => {
         icon="product-launch.svg"
         id="mission"
           />
-          <PricingBlock
-              title={PricingContent.title}
-              data={PricingContent.data}
-
+    <PricingBlock
+        title={PricingContent.title}
+        data={PricingContent.data}
+        id = "pricing"
       >
       </PricingBlock>
       <Contact

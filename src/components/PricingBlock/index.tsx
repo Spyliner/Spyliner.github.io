@@ -3,11 +3,11 @@ import { PricingDiv, SubTitle, SubscribeButton, ThumbnailBlock, TitleBlock, Cont
 import { Slide } from "react-awesome-reveal";
 import { Row , Col} from "antd";
 import {  MiddleBlockSection } from "../MiddleBlock/styles";
-import Paypal from "../PaymentComponent/Paypal";
 
 interface PricingProps { 
     title: string; 
     data: any; 
+    id: string; 
 }
 
 function createPricingElements(data: any) { 
@@ -62,11 +62,11 @@ function generateCrossmark(data: Array<string>) {
 }
 
 
-const PricingBlock = ({ title, data }: PricingProps) => {
+const PricingBlock = ({ title, data, id }: PricingProps) => {
     return (
-        <MiddleBlockSection>
-            <Slide direction="up" style={{ width: "100%", display: "block" }}>
-                <div style={{ width: "100%", display: "block" }} > 
+        <MiddleBlockSection >
+            <Slide direction="left" style={{ width: "100%", display: "block" }} >
+                <div style={{ width: "100%", display: "block" }} id={id} > 
                 <h6>{title}</h6>
                     <Row justify="center" align="middle" style={{ width: "100%", justifyContent: "space-evenly", padding: "20px" }} >
                     {createPricingElements(data)}
