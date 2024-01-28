@@ -5,9 +5,9 @@ const routes = [
     component: "Home",
     },
     {
-        path: ["/", "/home2"],
+        path: ["/privacy"],
         exact: true,
-        component: "Home2",
+        component: "PrivacyPolicy",
     },
 ];
 

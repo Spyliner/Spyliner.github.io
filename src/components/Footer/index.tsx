@@ -23,7 +23,7 @@ const Footer = ({ t }: any) => {
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
-              <Large to="/" left="true">
+                          <Large to="/privacy" left="true">
                 {t("Privacy Policy")}
               </Large>
             </Col>
