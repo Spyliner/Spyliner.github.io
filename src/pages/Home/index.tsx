@@ -4,8 +4,6 @@ import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ContactContent from "../../content/ContactContent.json";
-import PricingContent from "../../content/PricingContent.json";
-import PricingBlock from "../../components/PricingBlock";
 import ProductContent from "../../content/ProductContent.json";
 
 

@@ -22,7 +22,7 @@ import {
 
 const Header = ({ t }: any) => {
 
-  const history = useHistory();
+  //const history = useHistory();
   const [visible, setVisibility] = useState(false);
 
   const showDrawer = () => {

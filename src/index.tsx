@@ -7,7 +7,7 @@ import Router from "./router";
 import i18n from "./translation";
 
 
-import { PayPalScriptOptions, loadScript } from "@paypal/paypal-js";
+import { loadScript } from "@paypal/paypal-js";
 
 const App = () => (
     <BrowserRouter>
@@ -44,5 +44,3 @@ loadScript({ "clientId": "AXWz8a-_YDad9XYNqA7TdcpL7DidT1BiWBKKuZKHSHLej3NLFzqPai
         }
     }
 )
-
-onSiteOpened()
