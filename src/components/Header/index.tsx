@@ -4,7 +4,6 @@ import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
-import { useHistory } from "react-router-dom";
 import {
   HeaderSection,
   LogoContainer,
@@ -22,7 +21,6 @@ import {
 
 const Header = ({ t }: any) => {
 
-  //const history = useHistory();
   const [visible, setVisibility] = useState(false);
 
   const showDrawer = () => {
